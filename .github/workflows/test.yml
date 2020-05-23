@@ -29,5 +29,8 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
+    - name: Dump autoload
+      run: composer dump-autoload
+
     - name: Run test suite
       run: composer test
