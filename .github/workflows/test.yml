@@ -17,11 +17,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: PHP version
+    - name: Versions
       run: |
-        php -v
-        composer -v
-        phpunit -v
+        php --version
+        composer --version
+        phpunit --version
 
     - name: Validate composer.json and composer.lock
       run: composer validate
