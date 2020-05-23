@@ -1,0 +1,36 @@
+name: Test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  phpunit:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: phpunit
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: PHP version
+      run: |
+        php -v
+        composer -v
+        phpunit -v
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+
+    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+    - name: Run test suite
+      run: composer test
