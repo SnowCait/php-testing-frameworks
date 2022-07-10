@@ -2,8 +2,18 @@
 
 Compare PHP testing frameworks.
 
+## Supported by PhpStorm
+
+| Framework   |
+| -           |
+| PHPUnit     |
+| Codeception |
+| Behat       |
+| PHPSpec     |
+
 ## References
 
+- [テストフレームワーク | PhpStorm](https://pleiades.io/help/phpstorm/php-test-frameworks.html)
 - [9 Best Automated Testing Frameworks For PHP - Hongkiat](https://www.hongkiat.com/blog/automated-php-test/)
 - [10 Of The Best PHP Testing Frameworks For 2021](https://www.lambdatest.com/blog/best-php-testing-frameworks-2021/)
 
