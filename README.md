@@ -1,8 +1,11 @@
 # php-testing-frameworks
+
 Compare PHP testing frameworks.
 
 ## References
-[9 Best Automated Testing Frameworks For PHP - Hongkiat](https://www.hongkiat.com/blog/automated-php-test/)
+
+- [9 Best Automated Testing Frameworks For PHP - Hongkiat](https://www.hongkiat.com/blog/automated-php-test/)
+- [10 Of The Best PHP Testing Frameworks For 2021](https://www.lambdatest.com/blog/best-php-testing-frameworks-2021/)
 
 <!--
 ## Kind of Test
